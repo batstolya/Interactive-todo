@@ -79,7 +79,6 @@ function App() {
         <ul>
           {arr.map((i) => {
             let arrId = getArrInID(i.id);
-            console.log(arrId);
             if (i.parentId == 0) {
               return arrId.map((i) => (
                 <li key={i.id} className={`li-element${i.parentId}`}>
@@ -167,9 +166,7 @@ function App() {
                     <button
                       className="button-down"
                       onClick={() => {
-                        console.log(arrId);
                         let idSort = i.sort;
-                        console.log(getArrInID(i.id));
 
                         let positionInArray = [];
                         let newArr = arr.filter((i) => {
