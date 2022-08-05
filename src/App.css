@@ -1,0 +1,162 @@
+.App {
+  text-align: center;
+}
+
+.elements-add__todos {
+  font-weight: 700;
+  font-size: 50px;
+}
+
+li {
+  padding: 10px;
+  box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  font-family: Tahoma;
+}
+
+.li-element0 {
+  padding: 30px;
+  color: black;
+  font-size: 20px;
+  font-family: Tahoma;
+  border: none;
+  box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.elements-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+button {
+  box-sizing: border-box;
+  background-color: #4caf50;
+  border-radius: 3px;
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border: 2px solid #4caf50;
+}
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+.elements-button {
+  background-color: #4caf50;
+  padding: 12px 28px;
+  margin-left: 3px;
+  border: 2px solid #4caf50;
+}
+
+.elements-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.elements-input {
+  margin: 0;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  background: #ffffff;
+  outline: none;
+  height: 45px;
+  font-size: 45px;
+  width: 300px;
+  color: black;
+  font-size: 16px;
+  font-family: Tahoma;
+}
+input:focus {
+  outline: 1px solid #4caf50;
+}
+.button-remove {
+  background-color: #f44336;
+  color: white;
+  border: 2px solid #f44336;
+}
+.button-remove:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #f44336;
+}
+.button-remove__sublist {
+  background-color: rgb(169, 72, 72);
+  color: white;
+  border: 2px solid rgb(169, 72, 72);
+}
+.button-remove__sublist:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #f44336;
+}
+.button-up {
+  border: 2px solid #008cba;
+  background-color: #008cba;
+  color: white;
+}
+.button-up:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #008cba;
+}
+
+.button-down {
+  background-color: #ff6600;
+  color: white;
+  border: 2px solid #ff6600;
+}
+.button-down:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #ff6600;
+}
+
+.sublist-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.sublist-input {
+  box-sizing: border-box;
+  height: 35px;
+  margin: 0;
+  padding: 0 10px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  background: #ffffff;
+  outline: none;
+  /* margin-top: 10px; */
+  color: black;
+  font-size: 16px;
+
+  font-family: Tahoma;
+}
