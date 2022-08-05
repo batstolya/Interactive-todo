@@ -163,7 +163,7 @@ function App() {
                       UP
                     </button>
                   )}
-                  {i.parentId === 0 && i.sort !== 1 && (
+                  {i.parentId === 0 && (
                     <button
                       className="button-down"
                       onClick={() => {
@@ -195,8 +195,6 @@ function App() {
                         let arrWithoutElements = arr.filter(
                           (i) => i !== firstElem && i !== firstElem2
                         );
-                        console.log([...arrWithoutElements, ...arrSortChange]);
-                        console.log(newArr);
                         setArr([...arrWithoutElements, ...arrSortChange]);
                       }}
                     >
