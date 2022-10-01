@@ -2,14 +2,18 @@ import React, { useRef } from "react";
 
 export default function Sublist(props) {
   let sublistRef = useRef("");
+
   const sublistRefHandler = (e) => {
     let data = {
       id: Math.random(),
+      isVisible: false,
       value: sublistRef.current.value,
-      parentId: props.id
+      parentId: props.id,
+      sort: props.arr.length + Math.random()
     };
 
     props.setArr([...props.arr, data]);
+
     sublistRef.current.value = "";
     e.preventDefault();
   };
