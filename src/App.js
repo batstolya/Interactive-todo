@@ -9,7 +9,7 @@ const DUMMY__ARR = [
   { id: 105, value: "subTodo105", isVisible: "false", parentId: 1, sort: 1 },
   { id: 3, value: "todo3", isVisible: "false", parentId: 0, sort: 3 },
   { id: 322, value: "subTodo322", isVisible: "false", parentId: 3, sort: 1 },
-  { id: 312, value: "subTodo312", isVisible: "false", parentId: 3, sort: 1 }
+  { id: 312, value: "subTodo312", isVisible: "false", parentId: 3, sort: 1 },
 ];
 
 function App() {
@@ -33,12 +33,12 @@ function App() {
       let stylesObj = {
         border: "1px solid red",
         outline: "none",
-        error: "Error: text >= 3 letters"
+        error: "Error: text >= 3 letters",
       };
       let stylesBtn = {
         backgroundColor: "grey",
         color: "white",
-        border: "1px solid grey"
+        border: "1px solid grey",
       };
       setStyle(stylesObj);
       setStyleBtn(stylesBtn);
@@ -81,7 +81,7 @@ function App() {
         value: inputRef.current.value,
         isVisible: "false",
         parentId: 0,
-        sort: arr.length + Math.random()
+        sort: arr.length + Math.random(),
       };
       setArr([data, ...arr]);
       inputRef.current.value = "";
@@ -95,13 +95,14 @@ function App() {
       if (arr[i].value === e.target.className && +arr[i].id === +e.target.id) {
         let myNewData = {
           ...arr[i],
-          isVisible: true
+          isVisible: true,
         };
         arr[i] = myNewData;
         setArr(arr);
       }
     }
   };
+
 
   return (
     <div className="App">
@@ -133,9 +134,11 @@ function App() {
                   <span>{i.value}</span>
                   <span
                     className={`${i.parentId === 0 ? "hidden" : "visible"}`}
-                    onClick={() => {
-                      let filterArr = arr.filter((e) => e.id !== i.id);
-                      setArr(filterArr);
+                    onClick={()=> {
+                      let filterArr = arr.filter(e => e.id !== i.id);
+                      setArr(filterArr)                      
+
+                      
                     }}
                   >
                     X
@@ -206,7 +209,7 @@ function App() {
 
                           let arrSortChange = [
                             { ...firstElem, sort: firstElem2.sort },
-                            { ...firstElem2, sort: firstElem.sort }
+                            { ...firstElem2, sort: firstElem.sort },
                           ];
                           let arrWithoutElements = arr.filter(
                             (i) => i !== firstElem && i !== firstElem2
@@ -242,7 +245,7 @@ function App() {
 
                         let arrSortChange = [
                           { ...firstElem, sort: secondElem.sort },
-                          { ...secondElem, sort: firstElem.sort }
+                          { ...secondElem, sort: firstElem.sort },
                         ];
 
                         let arrWithoutElements = arr.filter(
